@@ -1,0 +1,326 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.square{
+    width:100px ;
+    height:100px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.square-r-b{
+    border-right:5px  solid greenyellow;
+    border-bottom:5px  solid greenyellow;
+}
+.square-b{
+    border-bottom:5px  solid greenyellow;
+}
+.square-l{
+    border-left:5px  solid greenyellow;
+}
+.square-l-b{
+    border-left:5px  solid greenyellow;
+    border-bottom:5px  solid greenyellow;
+}
+.square-r{
+    border-right:5px  solid greenyellow;
+}
+.square-r-t{
+    border-right:5px  solid greenyellow;
+    border-top:5px  solid greenyellow;
+}
+.square-t{
+    border-top:5px  solid greenyellow;
+}
+.square-l-t{
+    border-left:5px  solid greenyellow;
+    border-top:5px  solid greenyellow;
+}
+.bg{
+    width:100vw;
+    height: 100vh;
+    opacity: 0.9;
+}
+.board-row{
+    
+    display: flex;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    
+}
+.board-container{
+    position:absolute;
+    left: 63vw;
+    top: 29vh;
+}
+.winner {
+    position: absolute;
+    left: 66vw;
+    top: 15vh;
+    text-align: center;
+    color: rgb(197, 202, 196);
+    font-weight: 1000;
+}
+
+.name{
+    color: rgb(220, 197, 20);
+    position: absolute;
+    left: 62vw;
+    top: 17vh;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    font-family:cursive;
+}
+.tic{
+    transform: rotate(-5deg);
+    position: absolute;
+    width: 650px;
+    height: 300px;
+    z-index: 1;
+    left: 8vw;
+    top: 20vh;
+}
+.button{
+    position: absolute;
+    left: 100px;
+    top: 330px;
+}
+@media(max-width:1275px){
+    .tic{
+        width: 500px;
+        height: 250px;
+        left: 10vw;
+        top: 20vh;
+    }
+  
+}
+@media(max-width:1024px){
+    .tic{
+        width: 400px;
+        height: 200px;
+        left: 10vw;
+        top: 20vh;
+    }
+}
+@media(max-width:860px){
+    .tic{
+        width: 300px;
+        height: 150px;
+        left: 10vw;
+        top: 20vh;
+    }
+
+}
+@media(max-width:850px){
+    .tic{
+        width: 200px;
+        height: 50px;
+        left: 38vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 33vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 38vw;
+        top: 15vh;
+        
+    }
+    .name{
+        left: 32vw;
+        top: 17vh;
+    }
+    .button{
+        left: 80px;
+        top: 330px;
+    }
+
+}
+@media(max-width:520px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 38vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 23vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 35vw;
+        top: 15vh;
+    }
+    .name{
+        left: 23vw;
+        top: 17vh;
+    }
+
+}
+@media(max-width:470px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 30vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 18vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 32vw;
+        top: 15vh;
+    }
+    .name{
+        left: 18vw;
+        top: 17vh;
+    }
+
+}
+@media(max-width:410px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 28vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 13vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 25vw;
+        top: 15vh;
+    }
+    .name{
+        left: 13vw;
+        top: 17vh;
+    }
+
+}
+@media(max-width:370px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 30vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 8vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 100px;
+        top: 15vh;
+        
+    }
+    .name{
+        left: 8vw;
+        top: 17vh;
+    }
+
+}
+@media(max-width:350px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 25vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 3vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 25vw;
+        top: 15vh;
+    }
+    .name{
+        font-size: 30px;
+        left: 3vw;
+        top: 17vh;
+    }
+
+}
+@media(max-width:315px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 28vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 3vw;
+        top: 29vh;
+    }
+    .winner{
+        left: 80px;
+        top: 15vh;
+
+    }
+    .name{
+        font-size: 30px;
+        left: 3vw;
+        top: 17vh;
+    }
+
+}
+@media(max-width:310px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 28vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 3vw;
+        top: 29vh;
+        width:280px;
+       
+    }
+    .winner{
+        left: 20vw;
+        top: 15vh;
+    }
+    .name{
+        font-size: 28px;
+        left: 3vw;
+        top: 17vh;
+    }
+    .button{
+        left:70px;
+    }
+}
+@media(max-width:300px){
+    .tic{
+        width: 150px;
+        height: 50px;
+        left: 25vw;
+        top: 2vh;
+    }
+    .board-container{
+        left: 6vw;
+        top: 29vh;
+        width:250px;
+       
+    }
+    .winner{
+        left: 55px;
+        top: 15vh;
+    }
+    .name{
+        font-size: 28px;
+        left: 3vw;
+        top: 17vh;
+    }
+    .button{
+        left:70px;
+    }
+}
